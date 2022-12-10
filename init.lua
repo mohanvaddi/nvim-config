@@ -1,0 +1,7 @@
+require "mohanvaddi.options"
+require "mohanvaddi.plugins"
+require "mohanvaddi.keymaps"
+require "mohanvaddi.colorscheme"
+require "mohanvaddi.completions"
+require "mohanvaddi.lsp"
+require "mohanvaddi.telescope"
