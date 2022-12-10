@@ -15,8 +15,7 @@ vim.g.maplocalleader = " "
 --   insert_mode = "i",
 --   visual_mode = "v",
 --   visual_block_mode = "x",
---   term_mode = "t",
---   command_mode = "c",
+--   term_mode = "t", command_mode = "c",
 
 -- Normal --
 -- Better window navigation
@@ -73,3 +72,7 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":BufferLineCycleNext<CR>", opts)
 keymap("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
+
+-- Format
+keymap("n", "<C-S-i>", ":Format<CR>", opts)
+

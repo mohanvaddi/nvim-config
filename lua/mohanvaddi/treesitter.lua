@@ -1,6 +1,6 @@
 local configs = require("nvim-treesitter.configs")
 configs.setup {
-  ensure_installed = {"typescript", "rust"},
+  ensure_installed = { "typescript", "rust" },
   sync_install = false,
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
@@ -17,10 +17,10 @@ configs.setup {
     end,
   },
   autopairs = {
-		enable = true,
-	},
+    enable = true,
+  },
   indent = { enable = true, disable = { "yaml" } },
-   rainbow = {
+  rainbow = {
     enable = true,
     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
     extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
@@ -28,7 +28,7 @@ configs.setup {
     -- colors = {}, -- table of hex strings
     -- termcolors = {} -- table of colour name strings
   },
-    context_commentstring = {
+  context_commentstring = {
     enable = true,
     enable_autocmd = false,
   },

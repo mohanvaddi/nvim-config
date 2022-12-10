@@ -46,8 +46,8 @@ local kind_icons = {
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 cmp.setup {
   view = {
-  entries = {name = 'custom', selection_order = 'near_cursor' }
-},
+    entries = { name = 'custom', selection_order = 'near_cursor' }
+  },
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body) -- For `luasnip` users.
@@ -55,7 +55,7 @@ cmp.setup {
   },
   mapping = {
     ["<C-k>"] = cmp.mapping.select_prev_item(),
-		["<C-j>"] = cmp.mapping.select_next_item(),
+    ["<C-j>"] = cmp.mapping.select_next_item(),
     ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-1), { "i", "c" }),
     ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(1), { "i", "c" }),
     ["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
@@ -123,8 +123,8 @@ cmp.setup {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
- window = {
-   -- completion = cmp.config.window.bordered(),
+  window = {
+    -- completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
   },
   experimental = {

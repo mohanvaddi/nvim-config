@@ -79,7 +79,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
-  use "p00f/nvim-ts-rainbow"   -- for bracket-pair colorizer
+  use "p00f/nvim-ts-rainbow" -- for bracket-pair colorizer
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Git
@@ -90,7 +90,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
 
   -- bufferline (tabbing)
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
   use "moll/vim-bbye"
 
   -- Automatically set up your configuration after cloning packer.nvim
