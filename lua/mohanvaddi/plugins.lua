@@ -93,6 +93,8 @@ return packer.startup(function(use)
   use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
   use "moll/vim-bbye"
 
+  --lualine
+  use 'nvim-lualine/lualine.nvim'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
