@@ -11,7 +11,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "https://github.com/wbthomason/packer.nvim",
     install_path,
   }
-  print "Installing packer close and reopen Neovim..."
+  print "Installing packer close and reopen Neovim...";
   vim.cmd [[packadd packer.nvim]]
 end
 
@@ -44,8 +44,10 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+
   -- colorscheme
   use "LunarVim/darkplus.nvim"
+
   -- completions
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -54,6 +56,8 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
+  use "windwp/nvim-autopairs" -- bracket autopairs
+
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -67,6 +71,14 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+
+
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"   -- for bracket-pair colorizer
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
