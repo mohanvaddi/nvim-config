@@ -13,7 +13,7 @@ vim.cmd [[
     autocmd FileType gitcommit setlocal spell
   augroup end
 
-  augroup _markdown
+ augroup _markdown
     autocmd!
     autocmd FileType markdown setlocal wrap
     autocmd FileType markdown setlocal spell
@@ -31,3 +31,5 @@ vim.cmd [[
 
 ]]
 
+
+vim.api.nvim_create_autocmd("BufWritePre", { callback = function() vim.lsp.buf.format({ async = false }) end })

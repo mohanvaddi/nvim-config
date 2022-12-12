@@ -3,6 +3,10 @@ if not status_ok then
   return
 end
 
+
+local highlights = require('rose-pine.plugins.toggleterm')
+
+
 toggleterm.setup({
   size = 20,
   open_mapping = [[<c-\>]],
@@ -25,6 +29,7 @@ toggleterm.setup({
       background = "Normal",
     },
   },
+  highlights = highlights
 })
 
 function _G.set_terminal_keymaps()

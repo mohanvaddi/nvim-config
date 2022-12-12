@@ -49,6 +49,13 @@ return packer.startup(function(use)
 
   -- colorscheme
   use "LunarVim/darkplus.nvim"
+  use({
+    'rose-pine/neovim',
+    as = 'rose-pine',
+    config = function()
+      vim.cmd('colorscheme rose-pine')
+    end
+  })
 
   -- completions
   use "hrsh7th/nvim-cmp" -- The completion plugin
