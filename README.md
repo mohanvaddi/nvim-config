@@ -16,7 +16,7 @@ To install, clone this repo into `~/.config/nvim`
     - `toggleterm`
     - `Comment.nvim`
     - `impatient`
-    - `darkplus.nvim` -- colorscheme
+    - `rose-pine` -- colorscheme
     - `nvim-cmp`
     - `nvim-autopairs`
     - `nvim-ts-rainbow`
