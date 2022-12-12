@@ -22,3 +22,4 @@ To install, clone this repo into `~/.config/nvim`
     - `nvim-ts-rainbow`
     - `lualine`
     - `indent-blankline`
+- add downloaded lsps to list in `mason.lua`
