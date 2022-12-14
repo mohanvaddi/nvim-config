@@ -33,7 +33,7 @@ local options = {
   linebreak = true, -- break lines between words
   scrolloff = 15, -- is one of my fav
   sidescrolloff = 15,
-  guifont = "Hack:h10", -- the font used in graphical neovim applications
+  guifont = "Hack:h11", -- the font used in graphical neovim applications
 }
 vim.opt.shortmess:append "c"
 
