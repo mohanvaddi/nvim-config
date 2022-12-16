@@ -1,10 +1,17 @@
 local servers = {
   "sumneko_lua",
   "tsserver",
-  "rust_analyzer"
+  "rust_analyzer",
+  "angularls"
 }
 
 local settings = {
+  ensure_installed = {
+    "sumneko_lua",
+    "tsserver",
+    "rust_analyzer",
+    "angularls"
+  },
   ui = {
     border = "none",
     icons = {

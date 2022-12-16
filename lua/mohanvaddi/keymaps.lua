@@ -19,7 +19,7 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
- keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
@@ -74,8 +74,11 @@ keymap("n", "<S-l>", ":BufferLineCycleNext<CR>", opts)
 keymap("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
 
 -- Format
-keymap("n",  "<leader>i", ":Format<CR>", opts)
+keymap("n", "<leader>i", ":Format<CR>", opts)
 
 -- Save
 keymap("n", "<leader>w", ":w<cr>", opts)
 
+-- moving start and end of lines
+keymap("n", "<leader>h", "_", opts)
+keymap("n", "<leader>l", "$", opts)
